@@ -3,7 +3,7 @@ import csv
 from datetime import datetime
 import os
 
-token = os.getenv("git - code") ## tirei o meu pq o git considerou a info secreta e não me deixou commitar
+token = os.getenv("git - token") ## tirei o meu pq o git considerou a info secreta e não me deixou commitar
 headers = {"Authorization": f"Bearer {token}"}
 
 # Função para verificar a resposta da API
