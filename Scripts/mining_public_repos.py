@@ -1,10 +1,10 @@
 import requests
 import csv
 from datetime import datetime
+import os
 
-
-token : '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'
-headers = {'Authorization': f'token {token}', 'Content-Type': 'application/json'}
+token = os.getenv("git - code") ## tirei o meu pq o git considerou a info secreta e não me deixou commitar
+headers = {"Authorization": f"Bearer {token}"}
 
 # Função para verificar a resposta da API
 def check_response(response):
